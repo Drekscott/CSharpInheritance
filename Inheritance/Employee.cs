@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Inheritance
 {
-    public class Employee
+    public abstract class Employee 
     {
         private double      _baseSalary     = 0;
         public string      _name           = "";
@@ -36,9 +36,6 @@ namespace Inheritance
             return $"{this._employeeID}: {this._name}";
         }
 
-        public virtual String employeeStatus()
-        {
-            return $"{this._employeeID}: {this._name} is in the company's system";
-        }
+        public abstract String employeeStatus();
     }
 }
